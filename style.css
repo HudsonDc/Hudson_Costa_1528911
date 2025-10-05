@@ -1,0 +1,22 @@
+:root {
+  --background-color: #287233;
+  --primary-color: #020202;
+  --accent-color: #2f4f4f;
+  --card-color: #919191;
+  --border-color: black;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f5f5dc;
+  color: var(--primary-color);
+}
+
+.bg-accent {
+  background-color: var(--accent-color);
+}
+
+.bg-card {
+  background-color: var(--card-color);
+}
