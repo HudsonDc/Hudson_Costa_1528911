@@ -3,84 +3,55 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Palco & Pincel</title>
-
-
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
 
 </head>
 
-  <body>
-
-    <header class="bg-accent text-light text-center py-3">
-
+ <body>
+  <header class="bg-accent text-light text-center py-3">
     <h1>Palco & Pincel</h1>
-
-    </header>
+  </header>
 
   <main class="container-fluid py-4">
-
     <div class="row">
-
-      <aside class="col-lg-3 col-md-4 mb-4">
-
+      <!-- Filtro lateral -->
+      <aside class="col-lg-2 col-md-3 mb-3">
         <div class="bg-card border border-dark rounded p-3">
-
           <h2 class="h5">Filtros</h2>
 
           <details class="mb-2">
-
             <summary>Autor</summary>
-
             <input type="text" class="form-control mt-1" placeholder="Nome do autor" />
-
           </details>
 
-
           <details class="mb-2">
-
             <summary>Data</summary>
-
             <input type="date" class="form-control mt-1" />
-
           </details>
+
           <details class="mb-2">
-
             <summary>Categoria</summary>
-
             <select class="form-select mt-1">
-
               <option>Arte</option>
-
               <option>Música</option>
-
             </select>
           </details>
 
-
-
           <details class="mb-2">
-
             <summary>Valor</summary>
-
             <input type="range" class="form-range mt-1" min="0" max="10000" />
-
           </details>
 
-
           <details class="mb-2">
-
             <summary>Técnica</summary>
             <input type="text" class="form-control mt-1" />
           </details>
-
 
           <details class="mb-2">
             <summary>Cor predominante</summary>
             <input type="color" class="form-control form-control-color mt-1" />
           </details>
-
 
           <details class="mb-2">
             <summary>Disponibilidade</summary>
@@ -90,80 +61,88 @@
             </select>
           </details>
 
-
           <details class="mb-2">
             <summary>Gênero musical</summary>
             <input type="text" class="form-control mt-1" />
           </details>
-
 
           <details class="mb-2">
             <summary>Duração</summary>
             <input type="number" class="form-control mt-1" placeholder="Minutos" />
           </details>
 
-
-          <details class="mb-2">
-            <summary>Popularidade</summary>
-            <input type="range" class="form-range mt-1" min="0" max="100" />
-          </details>
-
-
           <details class="mb-2">
             <summary>Local</summary>
             <input type="text" class="form-control mt-1" />
           </details>
-
-
         </div>
       </aside>
 
-      <section class="col-lg-9 col-md-8">
-        <div class="row g-3">
+      <!-- Carrossel alinhado ao lado dos filtros -->
+      <section class="col-lg-10 col-md-9">
+        <div id="carouselExampleCaptions" class="carousel slide mb-4" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
 
-          <div class="col-sm-6 col-md-4">
-            <div class="bg-card border border-dark rounded p-4 text-center">Item 1</div>
+          <div class="carousel-inner">
+            <!-- 1º item -->
+            <div class="carousel-item active">
+              <a href="html/abapuru_site.html" style="text-decoration: none; color: white;">
+                <img src="img/abapuru.jpg" class="d-block mx-auto" style="max-height: 400px; object-fit: contain;" alt="Imagem da Pintura Abapuru">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Abapuru</h5>
+                  <p>Pintura de Tarsila do Amaral</p>
+                </div>
+              </a>
+            </div>
+
+            <!-- 2º item -->
+            <div class="carousel-item">
+              <a href="html/noite_estrelada_site.html" style="text-decoration: none; color: white;">
+                <img src="img/noite_estrelada.jpg" class="d-block w-auto h-50 mx-auto" alt="Imagem da Pintura Noite Estrelada">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Noite Estrelada</h5>
+                  <p>Pintura de Vincent van Gogh</p>
+                </div>
+              </a>
+            </div>
+
+            <!-- 3º item -->
+            <div class="carousel-item">
+              <a href="html/o_grito.html" style="text-decoration: none; color: white;">
+                <img src="img/o_grito.jpg" class="d-block w-auto h-20 mx-auto" alt="Imagem da Pintura O Grito">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>O Grito</h5>
+                  <p>Pintura De Edvard Munch</p>
+                </div>
+              </a>
+            </div>
           </div>
-          <div class="col-sm-6 col-md-4">
-            <div class="bg-card border border-dark rounded p-4 text-center">Item 2</div>
-          </div>
-          <div class="col-sm-6 col-md-4">
-            <div class="bg-card border border-dark rounded p-4 text-center">Item 3</div>
-          </div>
-          <div class="col-sm-6 col-md-4">
-            <div class="bg-card border border-dark rounded p-4 text-center">Item 4</div>
-          </div>
-          <div class="col-sm-6 col-md-4">
-            <div class="bg-card border border-dark rounded p-4 text-center">Item 5</div>
-          </div>
-          <div class="col-sm-6 col-md-4">
-            <div class="bg-card border border-dark rounded p-4 text-center">Item 6</div>
-          </div>
-          <div class="col-sm-6 col-md-4">
-            <div class="bg-card border border-dark rounded p-4 text-center">Item 7</div>
-          </div>
-          <div class="col-sm-6 col-md-4">
-            <div class="bg-card border border-dark rounded p-4 text-center">Item 8</div>
-          </div>
-          <div class="col-sm-6 col-md-4">
-            <div class="bg-card border border-dark rounded p-4 text-center">Item 9</div>
-          </div>
-          <div class="col-sm-6 col-md-4">
-            <div class="bg-card border border-dark rounded p-4 text-center">Item 10</div>
-          </div>
-          <div class="col-sm-6 col-md-4">
-            <div class="bg-card border border-dark rounded p-4 text-center">Item 11</div>
-          </div>
-          <div class="col-sm-6 col-md-4">
-            <div class="bg-card border border-dark rounded p-4 text-center">Item 12</div>
-          </div>
+
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+
+        <!-- Espaço para cards ou conteúdo adicional -->
+        <div class="row g-3">
+          <!-- seus cards ou conteúdo aqui -->
         </div>
       </section>
     </div>
   </main>
+</body>
 
-  <footer class="text-center py-3">
-    <button>Sair</button>
+<footer class="rodape">
+    <p>© 2025 Hudson Dorneles Costa - 1º Período de SI - PUC Minas Barreiro</p>
   </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>

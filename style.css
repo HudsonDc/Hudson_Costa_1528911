@@ -1,8 +1,9 @@
+
 :root {
   --background-color: #287233;
   --primary-color: #020202;
   --accent-color: #2f4f4f;
-  --card-color: #919191;
+  --card-color: #b5b2b2;
   --border-color: black;
 }
 
@@ -19,4 +20,70 @@ body {
 
 .bg-card {
   background-color: var(--card-color);
+}
+
+.carousel-control-next-icon{
+  background-color: gray;
+}
+
+.carousel-control-prev-icon{
+  background-color: gray;
+}
+
+.rodape {
+  background-color: var(--primary-color);
+  color: white;
+  text-align: center;
+  height: 30px;
+  padding: 1px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+.button {
+    padding: 0.5rem 1rem;
+    background-color: #444;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 0.5rem;
+}
+
+button:hover {
+    background-color: #666;
+}
+
+button {
+    padding: 0.5rem 1rem;
+    background-color: #444;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 0.5rem;
+}
+
+button:hover {
+    background-color: #666;
+}
+header h1 {
+    margin-top: 10px;
+    font-size: 2rem;
+    border-radius: 15px;
+    padding: 10px;
+}
+
+.card {
+    align: center;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    padding: 1rem;
+    margin: 1rem;
+    background-color: var(--card-color);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
 }

@@ -1,0 +1,42 @@
+[
+    {
+        "dados" : [
+            {
+                "id" : "0" ,
+                "nome" : "abapuru",
+                "autor" : "Tarsila do Amaral",
+                "ano" : 1928,
+                "tecnica" : "Óleo sobre tela",
+                "estilo" : "Modernismo",
+                "localizacao" : "Museu de Arte de São Paulo (MASP), São Paulo, Brasil",
+                "descricao" : "Abaporu é uma pintura icônica do modernismo brasileiro, criada por Tarsila do Amaral em 1928. A obra retrata uma figura humana com proporções exageradas, simbolizando a identidade cultural brasileira e a valorização das raízes indígenas.",
+                "imagem" : "img/abapuru.jpg"
+            }
+,
+            {
+                "id" : "1" ,
+                "nome" : "noite_estrelada",
+                "autor" : "Vincent van Gogh",
+                "ano" : 1889,
+                "tecnica" : "Óleo sobre tela",
+                "estilo" : "Pós-impressionismo",
+                "localizacao" : "Museu de Arte Moderna (MoMA), Nova York, EUA",
+                "descricao" : "A Noite Estrelada é uma das obras mais famosas de Vincent van Gogh, pintada em 1889. A pintura retrata uma paisagem noturna com um céu turbulento e estrelas brilhantes, refletindo as emoções intensas do artista durante seu período de internação em um asilo.",
+                "imagem" : "img/noite_estrelada.jpg"
+            }
+,
+
+            {
+                "id" : "2" ,
+                "nome" : "o_grito",
+                "autor" : "Edvard Munch",
+                "ano" : 1893,
+                "tecnica" : "Óleo, têmpera e pastel sobre cartão",
+                "estilo" : "Expressionismo",
+                "localizacao" : "Galeria Nacional, Oslo, Noruega",
+                "descricao" : "O Grito é uma obra expressionista criada por Edvard Munch em 1893. A pintura representa uma figura humana em um momento de angústia e desespero, com um fundo vibrante e distorcido que intensifica a sensação de ansiedade e alienação.",
+                "imagem" : "img/o_grito.jpg"
+            }
+        ]
+    }
+]
